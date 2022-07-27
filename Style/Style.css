@@ -1008,4 +1008,44 @@ footer>p {
     #PromoCont>div>img{
         width: 70%;
     }
+    #SubCont>div{
+        height: 20rem;
+    }
+    #WelContent>h2{
+        font-size: 1.7rem;
+    }
+    #SubContent>h3{
+        margin-top: 2rem;
+    }
+    #AnonymousSec>h2{
+        font-size: 1rem;
+        width: 90%;
+    }
+    #DetalAnonys>h3{
+        font-size: 1rem;
+    }
+    #HowPromo>h2{
+        font-size: 1rem;
+        width: 90%;
+    }
+    #UnsubsriceMthode>p{
+        font-size: 0.9rem;
+        width: 90%;
+        text-align: justify;
+    }
+    .CompMails>img{
+        width: 5rem;
+    }
+    .CompMails>p{
+        font-size: 0.9rem;
+    }
+    #DetalAnonys>h3{
+        width: 90%;
+    }
+    .CompMails{
+        width: auto;
+    }
+    #DetalAnonys{
+        margin: 0;
+    }
 }
