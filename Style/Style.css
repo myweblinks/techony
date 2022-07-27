@@ -103,6 +103,32 @@ body {
     border-bottom: 2px solid rgb(255, 255, 255);
 }
 
+#ThreedotBTN {
+    display: none;
+    justify-content: center;
+    padding: 0.3rem;
+    flex-direction: column;
+    background-color: rgb(0, 33, 133);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    margin-left: auto;
+    border: 2px solid white;
+    user-select: none;
+    pointer-events: none;
+}
+
+#ThreedotBTN>span {
+    background-color: white;
+    width: 80%;
+    height: 4px;
+    margin: 3px auto;
+}
+
 /* Welcome Screen Section  */
 #welSec {
     display: flex;
@@ -833,6 +859,7 @@ footer>p {
     #HowPromo {
         font-size: 1.7rem;
     }
+
     #StepsToSub>h3 {
         font-size: 1.7rem;
     }
@@ -847,7 +874,8 @@ footer>p {
     #PromoCont>div>h2 {
         font-size: 1.2rem;
     }
-    #StepsPromo{
+
+    #StepsPromo {
         flex-wrap: wrap;
     }
 
@@ -878,6 +906,7 @@ footer>p {
     #HowPromo {
         font-size: 1.5rem;
     }
+
     #StepsToSub>h3 {
         font-size: 1.5rem;
     }
@@ -899,7 +928,8 @@ footer>p {
     #StepsIMGs {
         zoom: 90%;
     }
-    #Savechanges>div{
+
+    #Savechanges>div {
         flex-wrap: wrap;
     }
 }
@@ -929,9 +959,10 @@ footer>p {
         font-size: 1.2rem;
     }
 
-    #StepsToSub>h3{
+    #StepsToSub>h3 {
         font-size: 1.2rem;
     }
+
     #StepsPromo>img {
         width: 1.5rem;
     }
@@ -940,14 +971,17 @@ footer>p {
         width: 8rem;
 
     }
-    #WelContent>h2{
+
+    #WelContent>h2 {
         font-size: 2.5rem;
     }
 }
-@media only screen and (max-width: 570px){
-    #StepsPromo{
+
+@media only screen and (max-width: 570px) {
+    #StepsPromo {
         flex-wrap: wrap;
     }
+
     #SubContent>h3 {
         font-size: 1.1rem;
     }
@@ -971,81 +1005,111 @@ footer>p {
     #HowPromo {
         font-size: 1.1rem;
     }
-    #StepsToSub>h3{
+
+    #StepsToSub>h3 {
         font-size: 1.1rem;
     }
-    #WelContent>p{
+
+    #WelContent>p {
         font-size: 0.9rem;
     }
-    #WelContent>p:nth-child(3){
+
+    #WelContent>p:nth-child(3) {
         font-size: 1rem;
     }
-    #SubContent>p{
+
+    #SubContent>p {
         font-size: 0.9rem;
         width: 100%;
         padding: 0.6rem;
     }
-    #SubContent>p:nth-child(3){
+
+    #SubContent>p:nth-child(3) {
         font-size: 1rem;
     }
-    #AnonymousSec>p{
+
+    #AnonymousSec>p {
         font-size: 0.9rem;
     }
-    #UnsubsriceMthode>p{
+
+    #UnsubsriceMthode>p {
         width: 100%;
         font: 0.9rem;
     }
-    #Savechanges>p{
+
+    #Savechanges>p {
         font-size: 0.9rem;
         width: 90%;
     }
-    #Clients>div>div>p{
+
+    #Clients>div>div>p {
         font-size: 0.9rem;
     }
-    #Clients>div>div>img{
+
+    #Clients>div>div>img {
         width: 6rem;
     }
-    #PromoCont>div>img{
+
+    #PromoCont>div>img {
         width: 70%;
     }
-    #SubCont>div{
+
+    #SubCont>div {
         height: 20rem;
     }
-    #WelContent>h2{
+
+    #WelContent>h2 {
         font-size: 1.7rem;
     }
-    #SubContent>h3{
+
+    #SubContent>h3 {
         margin-top: 2rem;
     }
-    #AnonymousSec>h2{
+
+    #AnonymousSec>h2 {
         font-size: 1rem;
         width: 90%;
     }
-    #DetalAnonys>h3{
+
+    #DetalAnonys>h3 {
         font-size: 1rem;
     }
-    #HowPromo>h2{
+
+    #HowPromo>h2 {
         font-size: 1rem;
         width: 90%;
     }
-    #UnsubsriceMthode>p{
+
+    #UnsubsriceMthode>p {
         font-size: 0.9rem;
         width: 90%;
         text-align: justify;
     }
-    .CompMails>img{
+
+    .CompMails>img {
         width: 5rem;
     }
-    .CompMails>p{
+
+    .CompMails>p {
         font-size: 0.9rem;
     }
-    #DetalAnonys>h3{
+
+    #DetalAnonys>h3 {
         width: 90%;
     }
-    .CompMails{
+
+    .CompMails {
         width: auto;
     }
-    #DetalAnonys{
+
+    #DetalAnonys {
         margin: 0;
+    }
+
+    #Nav>ul {
+        display: none;
+    }
+    #ThreedotBTN{
+        display: flex;
     }
 }
