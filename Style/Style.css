@@ -1,0 +1,1011 @@
+/* Union Classes */
+.NoCopy {
+    user-select: none;
+}
+
+.NoEvent {
+    pointer-events: none;
+}
+
+.DownArrow {
+    transform: translateY(1rem);
+    width: 2.5rem;
+    animation: UpDown 1s 0s linear both alternate infinite;
+}
+
+@keyframes UpDown {
+    from {
+        transform: translateY(1rem);
+    }
+
+    to {
+        transform: translateY(0rem);
+    }
+}
+
+.AnimateDivCls {
+    animation: RotatingDiv 2s 0s linear alternate infinite both;
+}
+
+@keyframes RotatingDiv {
+    from {
+        transform: rotateY(-20deg);
+    }
+
+    to {
+        transform: rotateY(20deg);
+    }
+}
+
+/* Customization Starts from here  */
+* {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: caption;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+
+/* Navigation Bar Customization */
+#Nav {
+    display: flex;
+    background-color: rgb(0, 0, 255);
+    width: 100%;
+    margin: auto;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Web Name  */
+#WebName {
+    font-size: 2rem;
+    color: white;
+    margin-left: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#Nav>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 0.3rem 0.6rem;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+#Nav>ul>li {
+    list-style: none;
+}
+
+#Nav>ul>li>a {
+    color: white;
+    margin: 0rem 0.2rem;
+    padding: 0.2rem 0.6rem;
+    cursor: pointer;
+    border: 0px solid transparent;
+    text-decoration: none;
+    width: auto;
+    height: auto;
+}
+
+#Nav>ul>li>a:hover {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+/* Welcome Screen Section  */
+#welSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+    z-index: 1;
+    max-width: 100rem;
+}
+
+#IMGCnt {
+    width: 50%;
+    height: 30rem;
+    margin-left: auto;
+    margin-right: 2rem;
+    position: relative;
+    background-image: url(../Files/welIMG.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+
+#IMGCnt:hover {
+    transform: scale(1.02);
+}
+
+#WelContent {
+    width: 50%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#WelContent>h2 {
+    color: black;
+    font-size: 3.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#WelContent>p {
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+    color: rgb(55, 55, 55);
+    text-align: center;
+}
+
+#btn_in_welscrn {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn_in_welscrn>a {
+    background-color: red;
+    outline: none;
+    border: none;
+    padding: 0.6rem 0.8rem;
+    color: white;
+    border-radius: 6px;
+    margin: auto 0.8rem;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+#btn_in_welscrn>a:hover {
+    background-color: rgb(211, 0, 0);
+    transform: scale(1.1);
+}
+
+#WelContent>p:nth-child(3) {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* Steps to Subscribe Section  */
+#StepsToSub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+    flex-direction: column;
+}
+
+#StepsToSub>h3 {
+    color: black;
+    font-size: 2rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: blanchedalmond;
+    padding: 1rem;
+}
+
+#StepsIMGs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+
+.Steps {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+    flex-direction: column;
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px transparent;
+    cursor: default;
+    transition: 0.4s;
+}
+
+.Steps:hover {
+    transform: scale(1.1);
+}
+
+.Steps>img {
+    width: 10rem;
+    height: auto;
+}
+
+.Steps>p {
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Subscribe Content Section  */
+#SubCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+    max-width: 100rem;
+}
+
+#SubIMG {
+    width: 50%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Files/SubIMG.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: auto;
+    margin-left: 2rem;
+    transition: 0.4s;
+}
+
+#SubIMG:hover {
+    transform: scale(1.02);
+}
+
+#SubContent {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#SubContent>h3 {
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    background-color: rgb(255, 149, 0);
+    padding: 0.4rem 0.8rem;
+    font-weight: 700;
+    border-radius: 8px;
+    user-select: none;
+}
+
+#SubContent>p {
+    width: 90%;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+#SubContent>p:nth-child(3) {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#SubContent>a {
+    background-color: red;
+    outline: none;
+    border: none;
+    padding: 0.6rem 0.8rem;
+    color: white;
+    border-radius: 6px;
+    margin: auto 0.8rem;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    transition: 0.4s;
+}
+
+#SubContent>a:hover {
+    background-color: rgb(224, 0, 0);
+    transform: scale(1.1);
+}
+
+/* Anonymous Section  */
+#AnonymousSec {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+
+}
+
+#AnonymousSec>h2 {
+    color: white;
+    background-color: blue;
+    padding: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#AnonymousSec>p {
+    width: 60%;
+    text-align: center;
+    margin-top: 1rem;
+
+}
+
+#AnonymousSec>div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 0rem;
+}
+
+#DetalAnonys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    margin: 0rem 1rem;
+}
+
+#DetalAnonys>h3 {
+    color: black;
+    text-align: center;
+    background-color: rgb(0, 255, 242);
+    padding: 0.7rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+#mailfrms {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CompMails {
+    width: 12rem;
+    margin-left: 1rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 0px transparent;
+    margin-top: 0rem;
+    border-radius: 20px;
+}
+
+.CompMails>img {
+    width: 8rem;
+    height: auto;
+}
+
+.CompMails>p {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Unsubcribe Method */
+#UnsubsriceMthode {
+    width: 40rem;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-left: 2px solid black;
+    margin-top: 1rem;
+}
+
+#UnsubsriceMthode>h3 {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 0.7rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin-top: 0rem;
+    font-weight: bold;
+}
+
+#UnsubsriceMthode>p {
+    width: 90%;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Promote Section  */
+#PromoCont {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+#PromoCont>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+#PromoCont>div>h2 {
+    color: black;
+    background-color: rgb(208, 158, 255);
+    border-radius: 10px;
+    font-size: 1.8rem;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#PromoCont>div:nth-child(1) {
+    margin-top: 5rem;
+}
+
+#PromoCont>div:nth-child(3) {
+    margin-top: 5rem;
+}
+
+#PromoCont>div:nth-child(1)>h2:nth-child(1) {
+    color: rgb(255, 255, 255);
+    background-color: rgb(47, 35, 35);
+    transform: translateY(2rem);
+    z-index: 3;
+}
+
+#PromoCont>div:nth-child(3)>h2:nth-child(1) {
+    color: rgb(255, 255, 255);
+    background-color: rgb(158 154 146);
+    transform: translateY(2rem);
+    z-index: 3;
+}
+
+#PromoCont>div>img {
+    width: 25rem;
+    height: auto;
+}
+
+/* How to promote section  */
+#HowPromo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+#HowPromo>h2 {
+    background-color: yellow;
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+#StepsPromo {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+}
+
+#StepsPromo>div {
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0rem 1rem;
+}
+
+#StepsPromo>div>img {
+    width: 10rem;
+    height: auto;
+}
+
+#StepsPromo>div>p {
+    width: 90%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#StepsPromo>img {
+    width: 3rem;
+    height: auto;
+    margin: auto 0.4rem;
+}
+
+/* Save Changes section  */
+#Savechanges {
+    display: flex;
+    align-items: center;
+    width: 100;
+    height: auto;
+    padding: 1rem;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+#Savechanges>h2 {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 0, 212);
+    padding: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+#Savechanges>p {
+    width: 50%;
+    text-align: justify;
+    margin-top: 1rem;
+    max-width: 100rem;
+}
+
+#Savechanges>div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+#Savechanges>div>div {
+    width: 14rem;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#Savechanges>div>div>img {
+    width: 8rem;
+    height: auto;
+
+}
+
+#Savechanges>div>div>p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Our Clients */
+#Clients {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+#Clients>h3 {
+    color: yellow;
+    background-color: rgb(59, 59, 59);
+    padding: 1rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#Clients>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+#Clients>div>div {
+    width: auto;
+    margin: 0rem 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#Clients>div>div>img {
+    width: 7rem;
+    height: auto;
+}
+
+#Clients>div>div>p {
+    text-align: center;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+/* Footer Here  */
+footer {
+    width: 100%;
+    height: 8rem;
+    background-color: rgb(0, 0, 255);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 8px solid red;
+    flex-direction: column;
+}
+
+footer>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+
+footer>div>a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0rem 0.3rem;
+}
+
+footer>div>a:hover {
+    border-bottom: 2px solid white;
+}
+
+footer>p {
+    color: white;
+    text-align: center;
+    margin: 1rem 0rem;
+    font-size: 0.9rem;
+}
+
+
+
+@media only screen and (max-width: 1500px) {
+    #WelContent>h2 {
+        font-size: 3.3rem;
+    }
+
+    #IMGCnt {
+        width: 38%;
+        height: 22rem;
+        margin-left: auto;
+    }
+
+    #WelContent {
+        width: 45;
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+    #PromoCont {
+        flex-wrap: wrap;
+        align-items: unset;
+    }
+
+    #PromoCont>div {
+        justify-content: unset;
+        margin: 0;
+    }
+
+    #PromoCont>div:nth-child(1) {
+        margin: 0;
+    }
+
+    #PromoCont>div:nth-child(3) {
+        margin-top: 0;
+        margin: 0;
+    }
+
+    #WelContent>h2 {
+        font-size: 2.5rem;
+    }
+
+    #WelContent>p {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1119px) {
+    #UnsubsriceMthode {
+        border: none;
+    }
+
+    #Savechanges>p {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    #welSec {
+        flex-direction: column;
+    }
+
+    #WelContent>h2 {
+        font-size: 3rem;
+    }
+
+    #WelContent {
+        width: 100%;
+    }
+
+    #IMGCnt {
+        width: 90%;
+        background-image: url(../Files/WelIMGFull.jpg);
+        margin: auto 1rem;
+    }
+
+    #SubCont {
+        flex-direction: column;
+    }
+
+    #Clients>div {
+        flex-wrap: wrap;
+    }
+
+    #SubCont>div {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    #HowPromo>h2 {
+        font-size: 1.7rem;
+    }
+
+    #SubContent>h3 {
+        font-size: 1.7rem;
+    }
+
+    #AnonymousSec>h2 {
+        font-size: 1.7rem;
+    }
+
+    #Savechanges>h2 {
+        font-size: 1.7rem;
+    }
+
+    #Clients>h3 {
+        font-size: 1.7rem;
+    }
+
+    #HowPromo>h2 {
+        font-size: 1.7rem;
+    }
+
+    #HowPromo {
+        font-size: 1.7rem;
+    }
+    #StepsToSub>h3 {
+        font-size: 1.7rem;
+    }
+
+    #PromoCont>div>h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+
+    #PromoCont>div>h2 {
+        font-size: 1.2rem;
+    }
+    #StepsPromo{
+        flex-wrap: wrap;
+    }
+
+    #Savechanges>div {
+        zoom: 85%;
+    }
+
+    #SubContent>h3 {
+        font-size: 1.5rem;
+    }
+
+    #AnonymousSec>h2 {
+        font-size: 1.5rem;
+    }
+
+    #Savechanges>h2 {
+        font-size: 1.5rem;
+    }
+
+    #Clients>h3 {
+        font-size: 1.5rem;
+    }
+
+    #HowPromo>h2 {
+        font-size: 1.5rem;
+    }
+
+    #HowPromo {
+        font-size: 1.5rem;
+    }
+    #StepsToSub>h3 {
+        font-size: 1.5rem;
+    }
+
+    #Clients>div {
+        zoom: 90%;
+    }
+
+
+    #StepsIMGs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #StepsPromo {
+        zoom: 90%;
+    }
+
+    #StepsIMGs {
+        zoom: 90%;
+    }
+    #Savechanges>div{
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    #SubContent>h3 {
+        font-size: 1.2rem;
+    }
+
+    #AnonymousSec>h2 {
+        font-size: 1.2rem;
+    }
+
+    #Savechanges>h2 {
+        font-size: 1.2rem;
+    }
+
+    #Clients>h3 {
+        font-size: 1.2rem;
+    }
+
+    #HowPromo>h2 {
+        font-size: 1.2rem;
+    }
+
+    #HowPromo {
+        font-size: 1.2rem;
+    }
+
+    #StepsToSub>h3{
+        font-size: 1.2rem;
+    }
+    #StepsPromo>img {
+        width: 1.5rem;
+    }
+
+    #StepsPromo>div>img {
+        width: 8rem;
+
+    }
+    #WelContent>h2{
+        font-size: 2.5rem;
+    }
+}
+@media only screen and (max-width: 570px){
+    #StepsPromo{
+        flex-wrap: wrap;
+    }
+    #SubContent>h3 {
+        font-size: 1.1rem;
+    }
+
+    #AnonymousSec>h2 {
+        font-size: 1.1rem;
+    }
+
+    #Savechanges>h2 {
+        font-size: 1.1rem;
+    }
+
+    #Clients>h3 {
+        font-size: 1.1rem;
+    }
+
+    #HowPromo>h2 {
+        font-size: 1.1rem;
+    }
+
+    #HowPromo {
+        font-size: 1.1rem;
+    }
+    #StepsToSub>h3{
+        font-size: 1.1rem;
+    }
+    #WelContent>p{
+        font-size: 0.9rem;
+    }
+    #WelContent>p:nth-child(3){
+        font-size: 1rem;
+    }
+    #SubContent>p{
+        font-size: 0.9rem;
+        width: 100%;
+        padding: 0.6rem;
+    }
+    #SubContent>p:nth-child(3){
+        font-size: 1rem;
+    }
+    #AnonymousSec>p{
+        font-size: 0.9rem;
+    }
+    #UnsubsriceMthode>p{
+        width: 100%;
+        font: 0.9rem;
+    }
+    #Savechanges>p{
+        font-size: 0.9rem;
+        width: 90%;
+    }
+    #Clients>div>div>p{
+        font-size: 0.9rem;
+    }
+    #Clients>div>div>img{
+        width: 6rem;
+    }
+    #PromoCont>div>img{
+        width: 70%;
+    }
+}
